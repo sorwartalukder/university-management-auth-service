@@ -5,13 +5,11 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  // HERE
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-
   "rules": {
     "no-unused-vars": "error",
     "prefer-const": "error",
@@ -21,10 +19,10 @@
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/explicit-module-boundary-types": "off"
   },
-
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "globals": {
     "process": "readonly"
